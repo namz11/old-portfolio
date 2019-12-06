@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap3.4.0min.css">
+    <!-- jQuery library -->
+    <script src="assets/js/jquery3.4.1min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="assets/js/bootstrap3.4.0min.js"></script>
+    <!-- Font Awesome 4.7.0  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Merriweather font -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Narmit Mashruwala</title>
+    <link rel = "icon" href="assets/images/logo4.png" type = "image/x-icon"> 
+    <!-- START jQuery for Smooth Scrolling -->
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <!-- END jQuery for Smooth Scrolling -->
+    <script>
+        // $(window).resize(function () {
+        //     var viewportWidth = $(window).width();
+        //     if (viewportWidth <= 600) {
+        //         $(".fa-3x").removeClass("fa-3x").addClass("fa-2x");
+        //     }
+        // });
+        $(window).on("load", function () {
+            var viewportWidth = $(window).width();
+            if (viewportWidth <= 600) {
+                $(".fa-3x").removeClass("fa-3x").addClass("fa-2x");
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="outer-grid">
+            <nav class="navbar-default">
+                <div class="row">
+                    <div class="navbar-header col-xs-6">
+                        <a class="navbar-brand" href="#">
+                            <img id="logo" src="assets/images/logo4.png">
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <ul class="nav navbar-nav navbar-right row">
+                            <li class="col-xs-6 right"><a href="assets/Narmit_CV.pdf" target="_blank"><strong class="underline">Resume</strong></a></li>
+                            <li class="col-xs-6 right"><a href="#socials"><strong class="underline">Socials</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="intro" class="row">
+            <div class="col-xs-12">
+                <div id="intro-text" class="inner-grid">
+                    <h2><strong>Hello. I am Narmit, a Front End Developer living in Ahmedabad, India.</strong></h2>
+                </div>
+            </div>
+        </div>
+        <div id="picture" class="row outer-grid">
+            <div class="col-xs-12">
+                <img src="assets/images/narmit.jpg" style="width: 90vw;; height:50%;">
+            </div>
+        </div>
+        <div id="about-me" class="row">
+            <div class="col-xs-12 inner-grid">
+                <h4 class="secondary-color"><strong>About</strong></h4>
+                <h4>I have a Bachelor of Technology degree in Information & Communication Technology
+                    form Dhirubhai Ambani Institute of Information & Communication Technology, Gandhinagar. I like to
+                    code things from scratch and enjoy bringing ideas to life in the browser. I
+                    am working on improving my skills one design problem at a time.
+                </h4>
+            </div>
+        </div>
+        <div id="software-tools" class="row">
+            <div class="col-xs-12 inner-grid">
+                <img src="assets/images/software_tools.png" style="width: 100%; height:auto;">
+            </div>
+        </div>
+        <div class="section-break"></div>
+        <div id="socials" class="row inner-grid">
+            <h4 class="secondary-color section-title" style="text-align: center;"><strong>Socials</strong></h4>
+            <div class="col-sm-2 top-icons">
+                <a href="https://www.instagram.com/_narmit/" class="hvr-icon-grow">
+                    <i class="fa fa-instagram fa-3x hvr-icon" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-sm-2 top-icons">
+                <a href="https://www.linkedin.com/in/narmitmashruwala/" class="hvr-icon-grow">
+                    <i class="fa fa-linkedin fa-3x hvr-icon" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-sm-4 center email-container">
+                <button type="button" id="email" class="hvr-grow hvr-icon-forward">
+                    <a href="mailto:narmitmashruwala@gmail.com">
+                        <i>Email Me</i>&nbsp;&nbsp;<i class="fa fa-long-arrow-right hvr-icon" aria-hidden="true"></i>
+                    </a>
+                </button>
+            </div>
+            <div class="col-sm-2 bottom-icons">
+                <a href="https://twitter.com/_narmit" class="hvr-icon-grow">
+                    <i class="fa fa-twitter fa-3x hvr-icon" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-sm-2 bottom-icons">
+                <a href="http://vsco.co/narmit" class="hvr-icon-grow">
+                    <img id="vsco" src="assets/images/vsco.png" class="hvr-icon">
+                </a>
+            </div>
+        </div>
+        <div class="section-break"></div>
+        <div id="footer" class="row outer-grid">
+            <div class="col-xs-12">
+                <p style="text-align: center;">Narmit Mashruwala &copy; 2019</p>
+            </div>
+        </div>
+        <!-- end container-fluid -->
+    </div>
+</body>
+
+</html>
